@@ -6,13 +6,13 @@ In this work, we propose CIGEval, a unified agentic framework for comprehensive 
 Please check out our paper <a href="" target="_blank">"A Unified Agentic Framework for Evaluating Conditional Image
 Generation"</a>.
 <p align="center">
-<img src="assets/overview.png" width="1024px"></img>
+<img src="assets/overview.png"></img>
 </p>
 
 ## Framework
 CIGEval adopts a divide-and-conquer scheme for evaluating images generated under multiple conditions. For each sub-question, CIGEval selects the most suitable tool from its toolbox, focusing on the specific aspect of evaluation. Then, the LMM analyzes the tool outputs and assigns scores.
 <p align="center">
-<img src="assets/framework.png" width="1024px"></img>
+<img src="assets/framework.png" ></img>
 </p>
 
 
