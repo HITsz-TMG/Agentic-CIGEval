@@ -8,8 +8,8 @@ In this work, we propose CIGEval, a unified agentic framework for comprehensive 
 ## 🌟 Framework
 CIGEval adopts a divide-and-conquer scheme for evaluating images generated under multiple conditions. For each sub-question, CIGEval selects the most suitable tool from its toolbox, focusing on the specific aspect of evaluation. Then, the LMM analyzes the tool outputs and assigns scores.
 <p align="center">
-<img src="assets/framework.png" width="300px" height="300px"></img>
-<img src="assets/overview.png" padding-left="30px" width="300px" height="300px"></img>
+<img src="assets/framework.png" width="300px" height="270px"></img>
+<img src="assets/overview.png" margin-left="30px" width="300px" height="270px"></img>
 </p>
 
 
