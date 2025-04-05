@@ -34,7 +34,7 @@ python evaluate_vie.py
 Then you can use `spear.py` to calculate the correlation between the evaluation results and human ratings.
 
 ## 📌 SFT
-To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. We employ GPT-4o to carry out the evaluation process of CIGEval in order to curate high-quality trajectory data. Using 60% of the ImagenHub data, we ultimately gather 2,274 high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit [trajectories]() to get the sft data, and visit [Qwen2-VL-7B-Instruct-sft]() and [Qwen2.5-VL-7B-Instruct-sft]() to get our fine-tuned models.
+To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. We employ GPT-4o to carry out the evaluation process of CIGEval in order to curate high-quality trajectory data. Using 60% of the ImagenHub data, we ultimately gather 2,274 high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit [trajectories](https://huggingface.co/datasets/wjfhit/cigeval-sft-data) to get the sft data, and visit [Qwen2-VL-7B-Instruct-sft]() and [Qwen2.5-VL-7B-Instruct-sft]() to get our fine-tuned models.
 
 ## ⚖️ Paper Results
 <p align="center">
