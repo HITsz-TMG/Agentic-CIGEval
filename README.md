@@ -1,8 +1,8 @@
 # CIGEval
 <p align="center">
-   📃 <a href="" target="_blank">Paper</a>
+   📃 <a href="https://arxiv.org/abs/2504.07046" target="_blank">Paper</a>
 </p>
-In this work, we propose CIGEval, a unified agentic framework for comprehensive evaluation of conditional image generation tasks. CIGEval utilizes large multimodal models (LMMs) as its core, integrating a multi-functional toolbox to enable fine-grained evaluation. Please check out our paper <a href="" target="_blank">"A Unified Agentic Framework for Evaluating Conditional Image Generation"</a>.
+In this work, we propose CIGEval, a unified agentic framework for comprehensive evaluation of conditional image generation tasks. CIGEval utilizes large multimodal models (LMMs) as its core, integrating a multi-functional toolbox to enable fine-grained evaluation. Please check out our paper <a href="https://arxiv.org/abs/2504.07046" target="_blank">"A Unified Agentic Framework for Evaluating Conditional Image Generation"</a>.
 
 
 ## 🌟 Framework
