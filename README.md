@@ -8,8 +8,8 @@ In this work, we propose CIGEval, a unified agentic framework for comprehensive 
 ## 🌟 Framework
 CIGEval adopts a divide-and-conquer scheme for evaluating images generated under multiple conditions. For each sub-question, CIGEval selects the most suitable tool from its toolbox, focusing on the specific aspect of evaluation. Then, the LMM analyzes the tool outputs and assigns scores.
 <p align="center">
-<img src="assets/framework.png" width="200px" height="180px"></img>
-<img src="assets/overview.png" width="200px" height="180px"></img>
+<img src="assets/framework.png" height="270px"></img>
+<img src="assets/overview.png" height="270px"></img>
 </p>
 
 
@@ -38,10 +38,10 @@ To empower smaller LMMs as effective evaluators, we aim to perform supervised fi
 
 ## ⚖️ Paper Results
 <p align="center">
-<img src="assets/table-1.png" width="300px"></img>
+<img src="assets/table-1.png" width="550px"></img>
 </p>
 <p align="center">
-<img src="assets/table-2.png" width="300px"></img>
+<img src="assets/table-2.png" width="550px"></img>
 </p>
 
 
@@ -51,5 +51,13 @@ To empower smaller LMMs as effective evaluators, we aim to perform supervised fi
 If you found this repository useful, please consider cite our paper:
 
 ```bibtex
-
+@misc{wang2025cigeval,
+      title={A Unified Agentic Framework for Evaluating Conditional Image Generation}, 
+      author={Jifang Wang and Xue Yang and Longyue Wang and Zhenran Xu and Yiyu Wang and Yaowei Wang and Weihua Luo and Kaifu Zhang and Baotian Hu and Min Zhang},
+      year={2025},
+      eprint={2504.07046},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.07046}, 
+}
 ```
