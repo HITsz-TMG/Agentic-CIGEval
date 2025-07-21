@@ -11,8 +11,8 @@ def read_human_sc(task, model, sample):
     mm = task.replace("ImagenHub_","")
 
     df1 = pd.read_csv(os.path.join(human_ratings,f"{task}/{mm}_rater1.tsv"), sep="\t")
-    df2 = pd.read_csv(os.path.join(human_ratings,f"{task}/{mm}_rater1.tsv"), sep="\t")
-    df3 = pd.read_csv(os.path.join(human_ratings,f"{task}/{mm}_rater1.tsv"), sep="\t")
+    df2 = pd.read_csv(os.path.join(human_ratings,f"{task}/{mm}_rater2.tsv"), sep="\t")
+    df3 = pd.read_csv(os.path.join(human_ratings,f"{task}/{mm}_rater3.tsv"), sep="\t")
 
     cell_value_1 = df1.loc[df1['uid'] == sample, model].values
     cell_value_2 = df2.loc[df2['uid'] == sample, model].values
