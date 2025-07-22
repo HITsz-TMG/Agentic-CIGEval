@@ -34,11 +34,11 @@ python evaluate_vie.py
 Then you can use `spear.py` to calculate the correlation between the evaluation results and human ratings.
 
 ## 📌 SFT
-<p>To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. The ImagenHub data is randomly split into a **6:4** ratio for the training set and test set.
+<p>To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. The ImagenHub data is randomly split into a 6:4 ratio for the training set and test set.
 </p>
-<p> For the training set, we employ GPT-4o to carry out the evaluation process of CIGEval, then filter out the trajectories where the evaluation results differ from human scores by less than 0.3, resulting in **2,274** high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit [trajectories](https://huggingface.co/datasets/HIT-TMG/CIGEval_sft_data) to get the sft data, and visit [Qwen2-VL-7B-Instruct-sft](https://huggingface.co/HIT-TMG/CIGEval-Qwen2-VL-7B-Instruct-sft) and [Qwen2.5-VL-7B-Instruct-sft](https://huggingface.co/HIT-TMG/CIGEval-Qwen2.5-VL-7B-Instruct-sft) to get our fine-tuned models.
+<p> For the training set, we employ GPT-4o to carry out the evaluation process of CIGEval, then filter out the trajectories where the evaluation results differ from human scores by less than 0.3, resulting in 2,274 high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit <a href="https://huggingface.co/datasets/HIT-TMG/CIGEval_sft_data" target="_blank">trajectories</a> to get the sft data, and visit <a href="https://huggingface.co/HIT-TMG/CIGEval-Qwen2-VL-7B-Instruct-sft" target="_blank">Qwen2-VL-7B-Instruct-sft</a> and <a href="https://huggingface.co/HIT-TMG/CIGEval-Qwen2.5-VL-7B-Instruct-sft" target="_blank">Qwen2.5-VL-7B-Instruct-sft</a> to get our fine-tuned models.
 </p>
-<p> For the test set, it is stored in `test_40p.json`. You can run 
+<p> For the test set, it is stored in `test_40p.json`. You can run `run_test_40p.py` to get the results of the locally run model on the test set.
 </p>
 
 ## ⚖️ Paper Results
@@ -46,7 +46,7 @@ Then you can use `spear.py` to calculate the correlation between the evaluation 
 <img src="assets/table-1.png" width="550px"></img>
 </p>
 <p align="center">
-<img src="assets/table-2.png" width="550px"></img>
+<img src="assets/table-40p.png" width="550px"></img>
 </p>
 
 
