@@ -34,7 +34,12 @@ python evaluate_vie.py
 Then you can use `spear.py` to calculate the correlation between the evaluation results and human ratings.
 
 ## 📌 SFT
-To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. We employ GPT-4o to carry out the evaluation process of CIGEval in order to curate high-quality trajectory data. Using 60% of the ImagenHub data, we ultimately gather 2,274 high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit [trajectories](https://huggingface.co/datasets/HIT-TMG/CIGEval_sft_data) to get the sft data, and visit [Qwen2-VL-7B-Instruct-sft]() and [Qwen2.5-VL-7B-Instruct-sft]() to get our fine-tuned models.
+<p>To empower smaller LMMs as effective evaluators, we aim to perform supervised fine-tuning on 7B models to integrate agentic capabilities into them. The ImagenHub data is randomly split into a **6:4** ratio for the training set and test set.
+</p>
+<p> For the training set, we employ GPT-4o to carry out the evaluation process of CIGEval, then filter out the trajectories where the evaluation results differ from human scores by less than 0.3, resulting in **2,274** high-quality trajectories for supervised fine-tuning. Using this structured trajectory data, we perform supervised fine-tuning on Qwen2-VL-7B-Instruct and Qwen2.5-VL-7B-Instruct. You can visit [trajectories](https://huggingface.co/datasets/HIT-TMG/CIGEval_sft_data) to get the sft data, and visit [Qwen2-VL-7B-Instruct-sft](https://huggingface.co/HIT-TMG/CIGEval-Qwen2-VL-7B-Instruct-sft) and [Qwen2.5-VL-7B-Instruct-sft](https://huggingface.co/HIT-TMG/CIGEval-Qwen2.5-VL-7B-Instruct-sft) to get our fine-tuned models.
+</p>
+<p> For the test set, it is stored in `test_40p.json`. You can run 
+</p>
 
 ## ⚖️ Paper Results
 <p align="center">
